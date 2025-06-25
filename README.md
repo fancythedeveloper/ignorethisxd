@@ -7,7 +7,7 @@ This is **not** a stealer of any sort. You can view all of the code on here and 
 
 ## Archived
 
-This project is now archived since I don't feel like updating this anymore. It's possible in the future that I will maintain it, but for the time being, I am not.
+test
 
 ## Links
 
