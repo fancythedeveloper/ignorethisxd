@@ -30,4 +30,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
          name: my-artifact
-         path: ${{github.workspace}}/target/x86_64-pc-windows-gnu/release/ropro-patcher.exe
+         path: ${{github.workspace}}/x86_64-pc-windows-gnu/release/ropro-patcher.exe
