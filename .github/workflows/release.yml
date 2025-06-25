@@ -25,4 +25,4 @@ jobs:
           TOOLCHAIN_VERSION: stable
           RUSTTARGET: ${{ matrix.target }}
           ARCHIVE_TYPES: ${{ matrix.archive }}
-          EXTRA_FILES: "RoPro-PATCHED.zip"
+          # EXTRA_FILES: "RoPro-PATCHED.zip"
