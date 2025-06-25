@@ -6,7 +6,7 @@ use platform_dirs::AppDirs;
 use crx_dl::{ChromeCRXQuery, crx_to_zip};
 
 // Constants
-const PROXIES_URL: &str = "https://raw.githubusercontent.com/Stefanuk12/RoProPatcher/master/proxies.txt";
+const PROXIES_URL: &str = "https://raw.githubusercontent.com/IAMNOTASPAMBOTYOUNOOB/RoProPatchered/refs/heads/master/proxies.txt";
 
 /// Fetches each proxy.
 fn get_proxies() -> Vec<String> {
