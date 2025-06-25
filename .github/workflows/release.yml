@@ -17,8 +17,9 @@ jobs:
             archive: zip
     steps:
       - uses: actions/checkout@master
-      - name: Compile and release
-        uses: rust-build/rust-build.action@v1.3.2
+      - name: Compile
+        id: compile
+        uses: rust-build/rust-build.action@v1.4.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -27,7 +28,9 @@ jobs:
           ARCHIVE_TYPES: ${{ matrix.archive }}
           # EXTRA_FILES: "RoPro-PATCHED.zip"
 
-      - uses: actions/upload-artifact@v4
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
         with:
-         name: my-artifact
-         path: ${{github.workspace}}/x86_64-pc-windows-gnu/release/ropro-patcher.exe
+          name: Binary
+          path: |
+            ${{ steps.compile.outputs.BUILT_ARCHIVE }}
