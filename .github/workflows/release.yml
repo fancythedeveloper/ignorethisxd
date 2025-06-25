@@ -26,3 +26,8 @@ jobs:
           RUSTTARGET: ${{ matrix.target }}
           ARCHIVE_TYPES: ${{ matrix.archive }}
           # EXTRA_FILES: "RoPro-PATCHED.zip"
+
+      - uses: actions/upload-artifact@v3
+        with:
+         name: my-artifact
+         path: ${{github.workspace}}/target/x86_64-pc-windows-gnu/release/ropro-patcher.exe
